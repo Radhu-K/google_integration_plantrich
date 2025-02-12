@@ -147,24 +147,46 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
-
-# scheduler_events = {
+scheduler_events = {
+    "cron": {
+   
+         " * * * * * ": [
+            "googleintagration.totalview.fetch_daily_visitor_location_total"
+         ],
+    }
+}    
+#scheduler_events = {
 # 	"all": [
 # 		"googleintagration.tasks.all"
 # 	],
 # 	"daily": [
 # 		"googleintagration.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"googleintagration.tasks.hourly"
-# 	],
-# 	"weekly": [
+	#  "cron": {
+    #     # Example: Running the function every day at 11:59 PM
+    #     "59 23 * * *": [
+    #         "googleintagration.totalview.fetch_daily_visitor_location_total"
+    #     ],
+    #     # Additional times (e.g., 2:30 PM and 3:28 PM)
+    #     "30 14 * * *": [
+    #         "googleintagration.totalview.fetch_daily_visitor_location_total"
+    #     ],
+    #     "48 10 * * *": [
+    #         "googleintagration.totalview.fetch_daily_visitor_location_total"
+    #     ],
+    #     "05 11 * * *": [
+    #         "googleintagration.totalview.fetch_daily_visitor_location_total"
+    #     ],
+    #     "53 16 * * *": [
+    #         "googleintagration.totalview.fetch_daily_visitor_location_total"
+    #     ],
+    # },# 	"weekly": [
 # 		"googleintagration.tasks.weekly"
 # 	],
 # 	"monthly": [
 # 		"googleintagration.tasks.monthly"
 # 	],
-# }
+ #}
 
 # Testing
 # -------
